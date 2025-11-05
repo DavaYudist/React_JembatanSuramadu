@@ -1,20 +1,40 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/home">Home</Link>
-        </li>
-        <li>
-          <Link to="/produk">Produk</Link>
-        </li>
-        <li>
-          <Link to="/kategori">Kategori</Link>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Home">
+          Navbar
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="/Home">
+              Home
+            </a>
+            <a class="nav-link" href="/Kategori">
+              Kategori
+            </a>
+            <a class="nav-link" href="/Produk">
+              produk
+            </a>
+            <a class="nav-link" href="/Contact">
+              Contact
+            </a>
+          </div>
+        </div>
+      </div>
     </nav>
   );
 }
